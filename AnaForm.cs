@@ -18,7 +18,7 @@ namespace RestoranUygulaması
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection("server=LAPTOP-95FHUSSK;database=RestoranApp;Trusted_Connection=yes");
-        SqlCommand komutlarim;
+       
         MasaSiparis masa;
         DateTime tarihNow = DateTime.Now;
         private void btnMasaSec_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -100,6 +100,15 @@ namespace RestoranUygulaması
             this.Hide();
             frmGiris giris = new frmGiris();
             giris.Show();
+        }
+        frmDetayliUrunAnalizi detayliUrunAnalizi;
+        private void btnDetayliUrunAnalizRaporu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+            detayliUrunAnalizi = new frmDetayliUrunAnalizi();
+            detayliUrunAnalizi.MdiParent = this;
+            detayliUrunAnalizi.Show();
         }
     }
 }

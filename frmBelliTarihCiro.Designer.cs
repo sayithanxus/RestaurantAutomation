@@ -35,11 +35,11 @@ namespace RestoranUygulaması
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnlSagTaraf = new System.Windows.Forms.Panel();
             this.pnlBilgi = new System.Windows.Forms.Panel();
-            this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.dtmpckrDate = new System.Windows.Forms.DateTimePicker();
             this.lblBilgi = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.chrtKarHesaplayici = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.pnlSagTaraf.SuspendLayout();
             this.pnlBilgi.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -69,28 +69,6 @@ namespace RestoranUygulaması
             this.pnlBilgi.Name = "pnlBilgi";
             this.pnlBilgi.Size = new System.Drawing.Size(348, 224);
             this.pnlBilgi.TabIndex = 7;
-            // 
-            // btnAra
-            // 
-            this.btnAra.Appearance.BackColor = System.Drawing.Color.SpringGreen;
-            this.btnAra.Appearance.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAra.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btnAra.Appearance.Options.UseBackColor = true;
-            this.btnAra.Appearance.Options.UseFont = true;
-            this.btnAra.Appearance.Options.UseForeColor = true;
-            this.btnAra.AppearanceHovered.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnAra.AppearanceHovered.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAra.AppearanceHovered.ForeColor = System.Drawing.Color.White;
-            this.btnAra.AppearanceHovered.Options.UseBackColor = true;
-            this.btnAra.AppearanceHovered.Options.UseFont = true;
-            this.btnAra.AppearanceHovered.Options.UseForeColor = true;
-            this.btnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAra.ImageOptions.Image")));
-            this.btnAra.Location = new System.Drawing.Point(7, 161);
-            this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(162, 47);
-            this.btnAra.TabIndex = 8;
-            this.btnAra.Text = "ARA";
-            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // dtmpckrDate
             // 
@@ -147,6 +125,25 @@ namespace RestoranUygulaması
             this.chrtKarHesaplayici.Size = new System.Drawing.Size(684, 504);
             this.chrtKarHesaplayici.TabIndex = 0;
             this.chrtKarHesaplayici.Text = "chrtKarHesaplayici";
+            // 
+            // btnAra
+            // 
+            this.btnAra.Appearance.BackColor = System.Drawing.Color.Teal;
+            this.btnAra.Appearance.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAra.Appearance.Options.UseBackColor = true;
+            this.btnAra.Appearance.Options.UseFont = true;
+            this.btnAra.AppearanceHovered.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnAra.AppearanceHovered.Font = new System.Drawing.Font("Verdana", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btnAra.AppearanceHovered.Options.UseBackColor = true;
+            this.btnAra.AppearanceHovered.Options.UseFont = true;
+            this.btnAra.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnAra.Location = new System.Drawing.Point(7, 157);
+            this.btnAra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(118, 47);
+            this.btnAra.TabIndex = 8;
+            this.btnAra.Text = "ARA";
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // frmBelliTarihCiro
             // 

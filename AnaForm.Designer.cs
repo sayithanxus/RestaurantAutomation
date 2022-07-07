@@ -58,6 +58,7 @@ namespace RestoranUygulaması
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnBelliTarihteCiro = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDetayliUrunAnalizRaporu = new DevExpress.XtraBars.BarButtonItem();
             this.btnGunlukCiro = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -90,6 +91,7 @@ namespace RestoranUygulaması
             // 
             // ribbonPageGroup7
             // 
+            this.ribbonPageGroup7.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
             this.ribbonPageGroup7.ItemLinks.Add(this.btnCikis);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             // 
@@ -275,6 +277,7 @@ namespace RestoranUygulaması
             // ribbonPageGroup4
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.btnBelliTarihteCiro);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnDetayliUrunAnalizRaporu);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             // 
             // btnBelliTarihteCiro
@@ -285,6 +288,14 @@ namespace RestoranUygulaması
             this.btnBelliTarihteCiro.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBelliTarihteCiro.ImageOptions.LargeImage")));
             this.btnBelliTarihteCiro.Name = "btnBelliTarihteCiro";
             this.btnBelliTarihteCiro.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBelliTarihteCiro_ItemClick);
+            // 
+            // btnDetayliUrunAnalizRaporu
+            // 
+            this.btnDetayliUrunAnalizRaporu.Caption = "Detaylı Ürün Analiz Raporu";
+            this.btnDetayliUrunAnalizRaporu.Id = 36;
+            this.btnDetayliUrunAnalizRaporu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDetayliUrunAnalizRaporu.ImageOptions.SvgImage")));
+            this.btnDetayliUrunAnalizRaporu.Name = "btnDetayliUrunAnalizRaporu";
+            this.btnDetayliUrunAnalizRaporu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDetayliUrunAnalizRaporu_ItemClick);
             // 
             // btnGunlukCiro
             // 
@@ -353,7 +364,7 @@ namespace RestoranUygulaması
             // 
             // ribbonSiparis
             // 
-            this.ribbonSiparis.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(26, 30, 26, 30);
+            this.ribbonSiparis.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(32, 37, 32, 37);
             this.ribbonSiparis.ExpandCollapseItem.Id = 0;
             this.ribbonSiparis.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ribbonSiparis.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -383,11 +394,13 @@ namespace RestoranUygulaması
             this.btnSepetEkle,
             this.btnSepetSil,
             this.btnSepetGuncelle,
-            this.btnOdemeMasaSec});
+            this.btnOdemeMasaSec,
+            this.btnDetayliUrunAnalizRaporu});
             this.ribbonSiparis.Location = new System.Drawing.Point(0, 0);
-            this.ribbonSiparis.MaxItemId = 36;
+            this.ribbonSiparis.Margin = new System.Windows.Forms.Padding(4);
+            this.ribbonSiparis.MaxItemId = 37;
             this.ribbonSiparis.Name = "ribbonSiparis";
-            this.ribbonSiparis.OptionsMenuMinWidth = 289;
+            this.ribbonSiparis.OptionsMenuMinWidth = 361;
             this.ribbonSiparis.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1});
             this.ribbonSiparis.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -573,5 +586,6 @@ namespace RestoranUygulaması
         private DevExpress.XtraScheduler.UI.MonthEdit monthEdit1;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem btnDetayliUrunAnalizRaporu;
     }
 }

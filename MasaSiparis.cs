@@ -124,11 +124,13 @@ namespace RestoranUygulaması
                 while (dr.Read())
                 {
                     Button btnMasa = new Button();
-                    btnMasa.Text = dr[0].ToString();
-
+                    toplamHesap th = new toplamHesap();
+                    int toplamFiyat = th.HesapToplami("SELECT [YemekFiyat],[UrunAdet] from tblSiparis inner join tblYemek on tblSiparis.UrunId=tblYemek.id where MasaNo=" + dr[0].ToString() + " ");
+                    btnMasa.Text = dr[0].ToString()+ "\n" + toplamFiyat+ " ₺";
+                    MasaNo = dr[0].ToString();
                     btnMasa.Size = new Size(150, 150);
                     btnMasa.ForeColor = Color.White;
-                    btnMasa.Font = new Font("Georgia", 20, FontStyle.Bold);
+                    btnMasa.Font = new Font("Calibri", 20, FontStyle.Bold);
                     if (dr[2].ToString() == "True")
                     {
                         
@@ -171,13 +173,17 @@ namespace RestoranUygulaması
 
         private void BtnMasa_Click(object sender, EventArgs e)
         {
+            string s = ((Button)sender).Text;
+
+            string[] subs = s.Split();
             
+
             tableLayoutPanel1.Visible = false;
             tableSiparisBolumu.Visible = true;
             kategoriButonlarıGetir();
-            lblMasa.Text = ((Button)sender).Text;
-            siparisListesiGetir(((Button)sender).Text);
-            MasaNo = ((Button)sender).Text;
+            lblMasa.Text = subs[0];
+            siparisListesiGetir(MasaNo);
+            MasaNo = subs[0];
 
 
         }
